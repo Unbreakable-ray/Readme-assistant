@@ -1,9 +1,9 @@
 # Readme Assistant
 
-a software that aims to help write my readme files faster 
+a software that aims to help me write my readme files faster 
 
 
 
 
 
-![](./readme assistant.drawio.png)
+![readme assistant.drawio](./readme assistant.drawio.png)
