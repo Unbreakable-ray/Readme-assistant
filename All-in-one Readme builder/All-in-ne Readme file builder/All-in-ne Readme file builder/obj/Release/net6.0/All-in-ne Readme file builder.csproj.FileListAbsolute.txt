@@ -1,0 +1,15 @@
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\bin\Release\net6.0\All-in-ne Readme file builder.exe
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\bin\Release\net6.0\All-in-ne Readme file builder.deps.json
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\bin\Release\net6.0\All-in-ne Readme file builder.runtimeconfig.json
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\bin\Release\net6.0\All-in-ne Readme file builder.dll
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\bin\Release\net6.0\All-in-ne Readme file builder.pdb
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.csproj.AssemblyReference.cache
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.AssemblyInfoInputs.cache
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.AssemblyInfo.cs
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.csproj.CoreCompileInputs.cache
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.dll
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\refint\All-in-ne Readme file builder.dll
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.pdb
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\All-in-ne Readme file builder.genruntimeconfig.cache
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\All-in-one Readme builder\All-in-ne Readme file builder\All-in-ne Readme file builder\obj\Release\net6.0\ref\All-in-ne Readme file builder.dll

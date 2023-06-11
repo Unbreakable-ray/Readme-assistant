@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All-in-ne Readme file builder", "All-in-ne Readme file builder\All-in-ne Readme file builder.csproj", "{7981C4A3-8D5B-4CE9-ABC1-B8D62BEAA988}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7981C4A3-8D5B-4CE9-ABC1-B8D62BEAA988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7981C4A3-8D5B-4CE9-ABC1-B8D62BEAA988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7981C4A3-8D5B-4CE9-ABC1-B8D62BEAA988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7981C4A3-8D5B-4CE9-ABC1-B8D62BEAA988}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4A391F2-B736-4E02-B023-69AD2C5FA80A}
+	EndGlobalSection
+EndGlobal

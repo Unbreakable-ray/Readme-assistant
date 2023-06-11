@@ -1,0 +1,5 @@
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\image-overlay\image-overlay-vs\image-overlay\bin\Release\net6.0-windows\app.publish\image-overlay.exe
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\image-overlay\image-overlay-vs\image-overlay\bin\Release\net6.0-windows\app.publish\image-overlay.dll
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\image-overlay\image-overlay-vs\image-overlay\bin\Release\net6.0-windows\app.publish\image-overlay.deps.json
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\image-overlay\image-overlay-vs\image-overlay\bin\Release\net6.0-windows\app.publish\image-overlay.runtimeconfig.json
+C:\Users\max\Documents\Github_Unbreakable\readme-tools\image-overlay\image-overlay-vs\image-overlay\bin\Release\net6.0-windows\app.publish\image-overlay.pdb
