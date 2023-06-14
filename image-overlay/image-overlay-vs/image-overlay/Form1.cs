@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Timers;
 
 namespace image_overlay
 {
@@ -27,9 +28,17 @@ namespace image_overlay
             //get image path
             if (openFileDialogImage.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+
+                btnDoit.Enabled = true;
+                //btnUpdate.Enabled = true;
+                trackBar1.Enabled = true;
+
+
                 string fileImagePath = openFileDialogImage.FileName;
                 global.imagePath= fileImagePath;
                 labelImagePath.Text = "Image path [" + (fileImagePath) + "]";
+                
+
                 
                 //! get more image info like widthg and high
                 System.Drawing.Image imgDimensions = System.Drawing.Image.FromFile(fileImagePath);
@@ -42,7 +51,11 @@ namespace image_overlay
                 labelimageWidth.Text = ("image Weight :" + (imageWidth));
 
                 labelImageHight.Text = ("Image Hight :" +(imageHeight));
-                string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (fileImagePath) + "\r\nH=" + (imageHeight) + "\r\nW=" + (imageWidth) + "\r\nPreserveAspectRatio=2");
+                //string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (fileImagePath) + "\r\nH=" + (imageHeight) + "\r\nW=" + (imageWidth) + "\r\nPreserveAspectRatio=2");
+                //string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (fileImagePath) + "\r\nH=" + (imageHeight) + "\r\nW=" + (imageWidth) + "\r\nPreserveAspectRatio=2\r\n[cUpdate]\r\nMeasure=Calc\r\nFormula= (cUpdate+1) % 61\r\nIfEqualValue=1\r\nIfEqualAction=!Refresh\r\nDynamicVariables=1");
+                string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (global.imagePath) + "\r\nH=" + (global.imageWmod) + "\r\nW=" + (global.imageHmod) + "\r\nPreserveAspectRatio=1\r\n\r\n[cUpdate]\r\nMeasure=Calc\r\nFormula= (cUpdate+1) % 61\r\nIfEqualValue=1\r\nIfEqualAction=!Refresh\r\nDynamicVariables=1");
+
+
                 //compileOutput = ((compileOutput) + "\n\rDynamicVariables=1");
                 richTextBox_compileOutput.Text = (compileOutput);
 
@@ -146,9 +159,17 @@ namespace image_overlay
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //btnupdate
         {
-            string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (global.imagePath) + "\r\nH=" + (global.imageWmod) + "\r\nW=" + (global.imageHmod) + "\r\nPreserveAspectRatio=1");
+            btnDoit.Enabled = true;
+            btnDoit.Text = "I will do it by my self";
+            btnUpdate.Enabled = false;
+
+
+
+            //string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (global.imagePath) + "\r\nH=" + (global.imageWmod) + "\r\nW=" + (global.imageHmod) + "\r\nPreserveAspectRatio=1");
+            string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (global.imagePath) + "\r\nH=" + (global.imageWmod) + "\r\nW=" + (global.imageHmod) + "\r\nPreserveAspectRatio=1\r\n\r\n[cUpdate]\r\nMeasure=Calc\r\nFormula= (cUpdate+1) % 61\r\nIfEqualValue=1\r\nIfEqualAction=!Refresh\r\nDynamicVariables=1");
+
             richTextBox_compileOutput.Text = compileOutput;
             string MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); //loock at decoumont folder
             string subFolderRainMeterPath = ((MyDocumentsPath) + (@"\Rainmeter\Skins\tst\tst1.ini"));
@@ -170,8 +191,9 @@ namespace image_overlay
 
         }
 
-        private void trackBar1_ValueChanged(object sender, EventArgs e)
-        {
+        private void trackBar1_ValueChanged_1(object sender, EventArgs e)
+        {   
+
             // Display the trackbar value in the text box.
             lblTrackBarValue.Text = "Trackbar value: " + trackBar1.Value;
             double mathScale = trackBar1.Value;
@@ -189,9 +211,26 @@ namespace image_overlay
             global.imageHmod = Convert.ToString(imageHightMod);
 
 
+           
+            string compileOutput = ("[Rainmeter]\r\nUpdate=1000\r\n\r\n[MeterName]\r\nMeter=Image\r\nImageName=" + (global.imagePath) + "\r\nH=" + (global.imageWmod) + "\r\nW=" + (global.imageHmod) + "\r\nPreserveAspectRatio=1\r\n\r\n[cUpdate]\r\nMeasure=Calc\r\nFormula= (cUpdate+1) % 61\r\nIfEqualValue=2\r\nIfEqualAction=!Refresh\r\nDynamicVariables=1");
+                richTextBox_compileOutput.Text = compileOutput;
+                string MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); //loock at decoumont folder
+                string subFolderRainMeterPath = ((MyDocumentsPath) + (@"\Rainmeter\Skins\tst\tst1.ini"));
+                System.IO.File.WriteAllText((subFolderRainMeterPath), (compileOutput));
+           
 
 
 
+            
+
+
+
+
+
+
+            btnUpdate.Enabled = true;
+            btnDoit.Enabled = false;
+            btnDoit.Text = "Press Updae first";
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -204,5 +243,24 @@ namespace image_overlay
         {
 
         }
+
+        private void btnDoit_Click(object sender, EventArgs e)
+        {
+            string Doit = richTextBox_compileOutput.Text;
+            string MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); //loock at decoumont folder
+            string subFolderRainMeterPath = ((MyDocumentsPath) + (@"\Rainmeter\Skins\tst\tst1.ini"));
+            System.IO.File.WriteAllText((subFolderRainMeterPath), (Doit));
+
+
+            Process CmdRun = new Process();
+            // Redirect the output stream of the child process.
+            CmdRun.StartInfo.UseShellExecute = false;
+            CmdRun.StartInfo.RedirectStandardOutput = true;
+            CmdRun.StartInfo.FileName = @"C:\Users\max\Documents\Github_Unbreakable\readme-tools\image-overlay\Rainmeter-refresh.bat";
+            CmdRun.Start();
+
+        }
+
+      
     }
 }
